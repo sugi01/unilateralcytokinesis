@@ -26,7 +26,7 @@ _This macro creates hyperstack from a image stack with two channels, 31 slices, 
 
 _Applying gaussian blur and attenuation correction plug-in to each frame and save in a "attenuatedimages" folder. Before using this macro, orient hyperstack built in step 1 so that anterior and posterior of embryo are to the left and right, respectively._
 
-3. Step3-morphologicalsegmentation.ijm
+3. Step3-Morphologicalsegmentation.ijm
 
 _>Open the folder containing attenuated images > Move the box to the cleavage site and click OK > 3D projection will be done > select ring en face view and click OK.> select best segmentation results and create "catchment basin" image > enter the label number of the segmented image (you can check by mouse over) > done_
 
@@ -38,9 +38,9 @@ _This macro does measurement of segmented data. Before running, modify the folde
 
 _This macro masks cytoplasmic region containing spindle (our strain is expressing SAS-7::GFP and is problematic when doing max projection in the next step. May not be always necessary but you can eliminate cytoplasmic signal. The processed files are automatically saved to the same folder._
 
-6. Step6-PIVprojectionperpendicular.ijm
+6. Step6-PIVprojectionleadingandlaggingviews.ijm
 
-_This macro creates 3D projection of the spindle-masked stack. After running, adjust the intensity value and click OK. > enter the number from the text file created in step 4. The text file contains "Add number Z" cells in each row. Enter the number from there at the relevant time point. In our paper, we selected the number when the relative diameter (second columns) exceeded 25 (25% closure relative to the initial diameter). It automatically saves results._
+_This macro creates 3D projection of the spindle-masked stack. After running, adjust the intensity value and click OK. > enter the number from the text file created in step 4. The text file contains "Add number Z" cells in each row which represents the orientation of closure. Enter the number from there at the relevant time point. In our paper, we selected the number when the relative diameter (second columns) exceeded 25 (25% closure). It automatically saves leading and lagging edge views. You need to do quality control at this step._
 
 7. Step7-SaveimagesequenceforPIV.ijm
 
