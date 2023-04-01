@@ -1,0 +1,38 @@
+open();
+path = getDirectory("image");
+title = getTitle();
+title1 = replace(title, ".tif", "");
+getDimensions(width, height, channels, slices, frames);
+run("Green");
+run("Properties...", "pixel_width=0.183333 pixel_height=0.183333 voxel_depth=1");
+run("Gaussian Blur...", "sigma=1 stack");
+run("Unsharp Mask...", "radius=1 mask=0.60 stack");
+setForegroundColor(0, 0, 0);
+Stack.setSlice(15);
+makeOval(76, 70, 192, 87);
+waitForUser("move oval shape to mask spindle");
+for (i =1;i<= frames;i++){
+Stack.setFrame(i);
+Stack.setSlice(12);
+run("Fill", "slice");
+Stack.setSlice(13);
+run("Fill", "slice");
+Stack.setSlice(14);
+run("Fill", "slice");
+Stack.setSlice(15);
+run("Fill", "slice");
+Stack.setSlice(16);
+run("Fill", "slice");
+Stack.setSlice(17);
+run("Fill", "slice");
+Stack.setSlice(18);
+run("Fill", "slice");
+Stack.setSlice(19);
+run("Fill", "slice");
+Stack.setSlice(20);
+run("Fill", "slice");
+Stack.setSlice(21);
+run("Fill", "slice");
+}
+run("Select None");
+saveAs("tiff",path+title1+"spindlemasked");
