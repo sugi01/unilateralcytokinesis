@@ -5,7 +5,7 @@
 <h3 align="center">Codes used in Hsu et al., in prep.</h3>
 
   <p align="center">
-    This is a repository for Image J codes and Jupyter notebook used in the paper to analyze cytokinesis dynamics.
+    This is a repository for Image J codes and Jupyter notebook used in our paper to analyze cytokinesis dynamics.
   </p>
 </div>
 
