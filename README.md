@@ -69,11 +69,11 @@ This macro quantifies the myosin raw ring image created in Step 10 using the seg
 
 ### Ringdata.ipynb
 
-This code reads text files created in Step 4 and does time alignment relative to 10% closure, calculate ring velocity, time lag, normalized time lag, and peak eccentricity.
+This code reads text files created in Step 4 and does time alignment relative to 10% closure, calculates ring velocity, time lag, normalized time lag, and peak eccentricity.
 
 ### Flowdata.ipynb
 
-This code reads PIV csv files created in MatLab PIVLab and calculate convergence. Also this code calculate mean convergence in a region of interest (center, left, and right relative to the cleavage site). "xcen" and "ycen" are user-defined location of the center of the cleavage site. convxfc represents A-P convergence in the center. ufl represents A-P flow in the left side. This code also does time alignment relative to 10% closure and calculate normalized flow velocity and peak flow velocity and peak convergence.
+This code reads PIV csv files created in MatLab PIVLab and calculates convergence. Also this code calculates mean convergence in a region of interest (center, left, and right relative to the cleavage site). "xcen" and "ycen" are user-defined location of the center of the cleavage site. convxfc represents A-P convergence in the center. ufl represents A-P flow in the left side. This code also does time alignment relative to 10% closure and calculate normalized flow velocity and peak flow velocity and peak convergence.
 
 <!-- USAGE EXAMPLES -->
 
